@@ -1,0 +1,21 @@
+version: "3.3"
+services:
+  es:
+    image: elasticsearch:7.13.2
+    container_name: es1
+    environment:
+      - discovery.type=single-node
+      # 必须设置虚拟机参数，否则无法运行
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    volumes:
+      - /root/es:/usr/share/
+    ports:
+      # 9200是web管理端口，9300 是transport端口，也是springboot连接es操作的端口
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - elastic
+    privileged: true
+networks:
+  elastic:
+    driver: bridge

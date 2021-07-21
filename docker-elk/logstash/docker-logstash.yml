@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  kibana:
+    image: logstash:7.13.3
+    container_name: logstash-mqz
+    ports:
+      - "5044:5044"
+      - "5000:5000/tcp"
+      - "5000:5000/udp"
+      - "9600:9600"
+    volumes:
+      - ./conf/logstash.yml:/usr/share/logstash/config/logstash.yml
+      - ./pipeline:/usr/share/logstash/pipeline
+    privileged: true

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--该日志将日志级别不同的log信息保存到不同的文件中 -->
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <springProperty scope="context" name="springAppName"
+                    source="spring.application.name"/>
+    <springProperty scope="context" name="serverPort"
+                    source="server.port"/>
+
+    <!-- 日志在工程中的输出位置 -->
+    <property name="LOG_FILE" value="${BUILD_FOLDER:-build}/${springAppName}"/>
+    <!-- 控制台的日志输出颜色样式 -->
+    <property name="log.colorPattern" value="%magenta(%d{yyyy-MM-dd HH:mm:ss}) %highlight(%-5level) %yellow(%thread) %green(%logger) %msg%n"/>
+
+    <property name="log.path" value="./logs" />
+    <property name="log.maxHistory" value="3" />
+    <property name="log.colorPattern" value="%magenta(%d{yyyy-MM-dd HH:mm:ss}) %highlight(%-5level) %yellow(%thread) %green(%logger) %msg%n"/>
+    <property name="log.pattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5level %thread %logger %msg%n"/>
+
+    <!-- 控制台输出 -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- 过滤debug输出 -->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+        <!-- 日志输出编码 -->
+        <encoder>
+            <pattern>${log.colorPattern}</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+    <!--输出到文件-->
+    <appender name="file_info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.path}/service/info/info-better-elk.log</File>
+        <!-- TimeBasedRollingPolicy： 最常用的滚动策略，它根据时间来制定滚动策略，既负责滚动也负责出发滚动 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 活动文件的名字会根据fileNamePattern的值，每隔一段时间改变一次 -->
+            <fileNamePattern>${log.path}/service/info/info-better-elk.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- 每产生一个日志文件，该日志文件的保存期限为${log.maxHistory}天 -->
+            <MaxHistory>${log.maxHistory}</MaxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <appender name="file_error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.path}/service/error/error-better-elk.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log.path}/service/error/error-better-elk.%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+
+    <!-- logback日志配置 -->
+    <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <destination>192.168.2.11:5000</destination>
+        <queueSize>1048576</queueSize>
+        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder">
+            <providers>
+                <timestamp>
+                    <timeZone>UTC</timeZone>
+                </timestamp>
+                <pattern>
+                    <pattern>
+                        {
+                        "severity": "%level",
+                        "service": "${springAppName:-}",
+                        "port": "${serverPort:-}",
+                        "trace": "%X{X-B3-TraceId:-}",
+                        "span": "%X{X-B3-SpanId:-}",
+                        "exportable": "%X{X-Span-Export:-}",
+                        "pid": "${PID:-}",
+                        "thread": "%thread",
+                        "class": "%logger{40}",
+                        "rest": "%message"
+                        }
+                    </pattern>
+                </pattern>
+            </providers>
+            <!-- 动态output设置索引名，需要在input设置 codec => json -->
+            <customFields>{"appname":"better-elk"}</customFields>
+        </encoder>
+    </appender>
+
+    <!--<logger name="elk_logger" level="INFO" additivity="false">
+        <appender-ref ref="logstash"/>
+    </logger>-->
+
+    <logger name="com.baomidou.mybatisplus.core.mapper" level="DEBUG"/>
+    <logger name="com.alibaba.nacos" level="OFF" />
+
+    <!-- 控制台输出日志级别 -->
+    <!--<root level="info">
+        <appender-ref ref="console"/>
+        <appender-ref ref="logstash"/>
+    </root>
+    <logger name="com.mqz" level="DEBUG">
+        <appender-ref ref="file_info" />
+        <appender-ref ref="file_error" />
+    </logger>-->
+
+    <!-- 日志输出级别 -->
+    <root level="INFO"> <!-- 如果想输出DEBUG日志修改成 level='DEBUG' -->
+        <appender-ref ref="console"/>
+        <appender-ref ref="file_info" />
+        <appender-ref ref="file_error" />
+        <appender-ref ref="logstash"/>
+    </root>
+</configuration>

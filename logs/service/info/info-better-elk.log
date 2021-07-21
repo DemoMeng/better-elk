@@ -1,0 +1,828 @@
+2021-07-21 11:32:55 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10063 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 11:32:55 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 11:32:55 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 11:32:55 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2021-07-21 11:32:56 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 11:32:56 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 11:32:56 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 11:32:56 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 11:32:56 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1257 ms
+2021-07-21 11:32:57 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-21 11:32:57 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-21 11:32:57 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-07-21 11:32:57 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-07-21 11:32:57 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 11:32:57 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 11:32:57 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-21 11:32:57 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 23.354 seconds (JVM running for 28.908)
+2021-07-21 11:34:21 INFO  http-nio-5000-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-21 11:34:21 INFO  http-nio-5000-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-07-21 11:34:21 INFO  http-nio-5000-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 11 ms
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠java.util.Random@2dd03e5f
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思java.util.Random@2317d595
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶java.util.Random@2728552f
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋java.util.Random@622adfae
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙java.util.Random@4e243772
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯java.util.Random@5302f85e
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马java.util.Random@36e64e3c
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒java.util.Random@20520e1
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰java.util.Random@6df50874
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙java.util.Random@29f1dd9c
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛java.util.Random@2de2e130
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东java.util.Random@64bde45
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪java.util.Random@43b8c050
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷java.util.Random@6402e886
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊java.util.Random@5e537e57
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封java.util.Random@6b23a2e
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安java.util.Random@38dc0e8
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪java.util.Random@70384ec7
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼java.util.Random@355c2751
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰java.util.Random@22a8189e
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎java.util.Random@4fcf16a3
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓java.util.Random@7d3337eb
+2021-07-21 11:34:28 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘java.util.Random@2901f1b3
+2021-07-21 11:52:25 INFO  Thread-51 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-21 11:53:05 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10101 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 11:53:05 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 11:53:06 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 11:53:06 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2021-07-21 11:53:07 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 11:53:07 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 11:53:07 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 11:53:07 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 11:53:07 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1461 ms
+2021-07-21 11:53:07 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-21 11:53:08 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-21 11:53:08 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-07-21 11:53:08 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-07-21 11:53:08 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 11:53:08 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 11:53:08 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-21 11:53:08 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 23.664 seconds (JVM running for 29.851)
+2021-07-21 13:55:02 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10284 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 13:55:02 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 13:55:03 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 13:55:03 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2021-07-21 13:55:03 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 13:55:03 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 13:55:03 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 13:55:03 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 13:55:03 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1412 ms
+2021-07-21 13:55:04 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-21 13:55:04 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-21 13:55:05 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-07-21 13:55:05 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-07-21 13:55:05 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 13:55:05 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 13:55:05 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-21 13:55:05 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 24.501 seconds (JVM running for 30.259)
+2021-07-21 14:06:34 INFO  Thread-53 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-21 14:12:14 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10347 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 14:12:14 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 14:12:14 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 14:12:15 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2021-07-21 14:12:15 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 14:12:15 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 14:12:15 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 14:12:15 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 14:12:15 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1191 ms
+2021-07-21 14:12:16 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-21 14:12:16 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-21 14:12:16 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-07-21 14:12:16 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-07-21 14:12:16 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 14:12:16 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 14:12:16 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-21 14:12:16 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 23.22 seconds (JVM running for 28.871)
+2021-07-21 14:15:15 INFO  Thread-51 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-21 14:15:49 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10363 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 14:15:49 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 14:15:49 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 14:15:49 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2021-07-21 14:15:50 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 14:15:50 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 14:15:50 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 14:15:50 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 14:15:50 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1376 ms
+2021-07-21 14:15:51 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-21 14:15:51 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-21 14:15:51 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-07-21 14:15:51 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-07-21 14:15:52 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 14:15:52 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 14:15:52 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-21 14:15:52 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 23.612 seconds (JVM running for 29.372)
+2021-07-21 14:26:05 INFO  Thread-52 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-21 14:26:38 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10387 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 14:26:38 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 14:26:39 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 14:26:39 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2021-07-21 14:26:40 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 14:26:40 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 14:26:40 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 14:26:40 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 14:26:40 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1170 ms
+2021-07-21 14:26:40 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-21 14:26:40 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-21 14:26:41 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-07-21 14:26:41 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-07-21 14:26:41 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 14:26:41 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 14:26:41 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-21 14:26:41 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 23.207 seconds (JVM running for 28.9)
+2021-07-21 14:41:49 INFO  Thread-51 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-21 14:42:23 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10416 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 14:42:23 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 14:42:23 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 14:42:24 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2021-07-21 14:42:24 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 14:42:24 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 14:42:24 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 14:42:24 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 14:42:24 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1400 ms
+2021-07-21 14:42:25 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-21 14:42:25 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-21 14:42:26 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-07-21 14:42:26 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-07-21 14:42:26 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 14:42:26 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 14:42:26 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-21 14:42:26 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 23.798 seconds (JVM running for 29.51)
+2021-07-21 15:07:14 INFO  Thread-52 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-21 15:07:48 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10532 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 15:07:48 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 15:07:49 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 15:07:50 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2021-07-21 15:07:50 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 15:07:50 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 15:07:50 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 15:07:51 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 15:07:51 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 2206 ms
+2021-07-21 15:07:51 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-21 15:07:52 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-21 15:07:52 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-07-21 15:07:52 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-07-21 15:07:52 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 15:07:52 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 15:07:52 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-21 15:07:52 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 24.899 seconds (JVM running for 30.825)
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 26 ms
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠37045
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思66252
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶57642
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋90122
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙76746
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯92878
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马82366
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒24178
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰81307
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙64537
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛94792
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东64278
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪17815
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷75696
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊9538
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封65125
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安10533
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪5387
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼71663
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰7827
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎22502
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓22960
+2021-07-21 15:09:31 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘64698
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠9719
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思20793
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶66509
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋81470
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙96785
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯13000
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马88346
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒77584
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰74092
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙69047
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛56539
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东38289
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪10764
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷73558
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊52056
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封12676
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安40874
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪71805
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼92458
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰45643
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎37423
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓70264
+2021-07-21 15:50:19 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘96049
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠48214
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思85770
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶68032
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋12105
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙82977
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯63035
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马28466
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒91231
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰45507
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙34542
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛72518
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东41083
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪95787
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷41959
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊44195
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封17456
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安98165
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪10255
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼14932
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰84496
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎22501
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓80083
+2021-07-21 15:50:22 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘10564
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠19305
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思24810
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶5928
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋53210
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙10311
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯3681
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马27377
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒21744
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰82668
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙96486
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛22972
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东97762
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪64245
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷94513
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊40787
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封75795
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安99424
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪49047
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼33324
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰42819
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎16317
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓47683
+2021-07-21 15:50:23 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘48012
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠38624
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思72413
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶69055
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋54776
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙66416
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯26976
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马55675
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒9430
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰50518
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙70329
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛86179
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东46318
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪53424
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷2988
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊56308
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封20682
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安35458
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪46480
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼40603
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰98788
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎64651
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓66715
+2021-07-21 15:51:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘84375
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠56318
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思15469
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶78301
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋5145
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙98895
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯87774
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马37964
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒58853
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰53796
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙42343
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛51768
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东59909
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪58551
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷81003
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊87072
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封73467
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安16431
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪39518
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼82196
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰91053
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎21664
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓94206
+2021-07-21 15:55:41 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘26362
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠89428
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思44707
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶2786
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋19671
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙28967
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯24325
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马8045
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒48046
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰54134
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙35037
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛35152
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东26167
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪66618
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷55645
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊32085
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封29234
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安21021
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪38440
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼59279
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰76707
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎379
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓90941
+2021-07-21 15:55:43 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘31127
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠80038
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思67747
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶7721
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋67177
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙73161
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯38656
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马17341
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒97288
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰20834
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙98623
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛49916
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东36891
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪87209
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷57605
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊36869
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封32473
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安18696
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪16256
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼4768
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰34120
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎60890
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓45443
+2021-07-21 15:56:25 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘49135
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠25684
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思43767
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶93156
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋92646
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙65942
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯13429
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马74209
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒64700
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰27100
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙90562
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛344
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东22654
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪92307
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷26369
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊45726
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封84846
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安35648
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪44187
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼25460
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰67699
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎21374
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓22158
+2021-07-21 15:56:26 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘30059
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠83656
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思45986
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶68436
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋41023
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙74803
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯6713
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马5219
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒29573
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰82608
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙34502
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛51910
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东24184
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪67338
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷26217
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊81633
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封53298
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安45563
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪15244
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼27993
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰91291
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎26895
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓4400
+2021-07-21 15:56:58 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘63332
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠97712
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思22061
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶85785
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋42933
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙76757
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯97830
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马60647
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒80166
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰84367
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙85504
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛73187
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东12773
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪11673
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷82981
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊48666
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封3511
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安22269
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪78129
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼66901
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰87671
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎23838
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓71219
+2021-07-21 15:57:21 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘91250
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠40962
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思33630
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶98569
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋52119
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙86877
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯64688
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马58986
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒81573
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰22417
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙96950
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛59438
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东18924
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪95823
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷90189
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊36056
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封86257
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安73192
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪2449
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼74803
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰98912
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎49105
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓90903
+2021-07-21 15:57:49 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘52507
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠36639
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思1711
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶39914
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋35185
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙60484
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯30518
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马92118
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒24983
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰76701
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙32715
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛53890
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东73278
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪60529
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷95248
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊92076
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封361
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安5314
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪46043
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼14778
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰73732
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎14116
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓55407
+2021-07-21 15:58:14 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘68608
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠10298
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思98397
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶4243
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋18106
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙76066
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯16227
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马23068
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒98789
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰98
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙56554
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛29221
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东4860
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪91258
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷91700
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊3209
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封86066
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安15326
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪22930
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼93860
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰20902
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎16285
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓52520
+2021-07-21 15:58:20 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘93364
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠22576
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思43677
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶53975
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋22273
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙76431
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯88720
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马61207
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒5897
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰47862
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙99913
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛52971
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东94413
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪80340
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷80204
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊67962
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封46584
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安12250
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪64464
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼38667
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰81062
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎51097
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓98255
+2021-07-21 15:58:23 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘84038
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠51842
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思70069
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶15952
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋94511
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙52440
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯27328
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马38510
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒36232
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰55141
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙49393
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛88491
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东49319
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪62329
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷71933
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊64135
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封30973
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安83443
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪2437
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼86199
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰71999
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎86799
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓8614
+2021-07-21 15:58:25 INFO  http-nio-5000-exec-8 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘52156
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠69068
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思6839
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶68568
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋93393
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙63967
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯54768
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马51463
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒92295
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰98773
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙67762
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛72296
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东10266
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪9803
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷70719
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊29183
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封87921
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安89150
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪10266
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼63698
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰12097
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎48692
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓99060
+2021-07-21 15:58:26 INFO  http-nio-5000-exec-9 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘10410
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠52887
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思98417
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶38129
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋75394
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙58895
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯20067
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马11093
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒14407
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰73924
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙56403
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛89754
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东80380
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪31675
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷38695
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊14155
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封82440
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安83934
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪17156
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼42869
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰65573
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎41835
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓68932
+2021-07-21 15:58:28 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘21859
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠43346
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思86139
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶54530
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋10402
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙44899
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯29778
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马62079
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒71811
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰19778
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙62064
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛56898
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东63528
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪6334
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷94237
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊36829
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封95918
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安87712
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪72902
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼74088
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰58359
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎45610
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓7896
+2021-07-21 16:04:24 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘93165
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠26196
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思90388
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶73012
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋3565
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙4909
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯30663
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马73593
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒70855
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰89052
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙19457
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛90205
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东37562
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪68342
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷64756
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊62667
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封37489
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安57588
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪52152
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼5374
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰24330
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎8938
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓63692
+2021-07-21 16:06:27 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘93713
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠74719
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思49974
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶48673
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋90545
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙51959
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯83133
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马16325
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒35312
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰22822
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙75279
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛12274
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东27884
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪87986
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷28155
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊33572
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封43818
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安27605
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪84046
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼1883
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰13011
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎60067
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓97650
+2021-07-21 16:06:38 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘28015
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：京飙忠81017
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：菅霖思10685
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：浮成纶58791
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：帖俊宋75379
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：龙天飙55106
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蹉哲濯79018
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：班灏马49016
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：拜生儒35781
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：鲁建彰92038
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：矫才蒙99184
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：范清涛26339
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：撒儒东43139
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：充泰宪40672
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：北朗舷75357
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：安信磊81122
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：宁腾封65750
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：蓬刚安70170
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：敏舱宪64339
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：池兴劼38162
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：多与勰16098
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：李豪奎75407
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：冼才弓99186
+2021-07-21 16:09:35 INFO  http-nio-5000-exec-7 com.mqz.elk.web.controller.user.UserController 【better-elk信息】姓名：守望勘56013
+2021-07-21 17:04:10 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10945 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 17:04:10 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 17:04:10 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 17:04:10 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 47ms. Found 1 repository interfaces.
+2021-07-21 17:04:11 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 17:04:11 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 17:04:11 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 17:04:11 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 17:04:11 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1512 ms
+2021-07-21 17:04:11 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2021-07-21 17:04:11 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-21 17:06:02 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10968 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 17:06:02 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 17:06:03 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 17:06:03 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 48ms. Found 1 repository interfaces.
+2021-07-21 17:06:04 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 17:06:04 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 17:06:04 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 17:06:04 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 17:06:04 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1256 ms
+2021-07-21 17:06:04 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2021-07-21 17:06:04 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-21 17:08:59 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10979 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 17:08:59 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 17:09:00 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 17:09:00 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 92ms. Found 1 repository interfaces.
+2021-07-21 17:09:01 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 17:09:01 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 17:09:01 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 17:09:01 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 17:09:01 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 2084 ms
+2021-07-21 17:09:02 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2021-07-21 17:09:02 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-21 17:13:04 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 10993 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 17:13:04 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 17:13:04 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 17:13:04 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 43ms. Found 1 repository interfaces.
+2021-07-21 17:13:05 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 17:13:05 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 17:13:05 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 17:13:05 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 17:13:05 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1527 ms
+2021-07-21 17:13:06 INFO  main org.elasticsearch.plugins.PluginsService no modules loaded
+2021-07-21 17:13:06 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-07-21 17:13:06 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-07-21 17:13:06 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-07-21 17:13:06 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-07-21 17:13:06 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-07-21 17:13:12 INFO  main org.springframework.data.elasticsearch.client.TransportClientFactoryBean Adding transport node : 192.168.2.11:9300
+2021-07-21 17:13:18 INFO  main org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2021-07-21 17:13:18 INFO  main org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-21 17:19:50 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 11001 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 17:19:50 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 17:19:50 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 17:19:50 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 49ms. Found 1 repository interfaces.
+2021-07-21 17:19:51 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 17:19:51 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 17:19:51 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 17:19:51 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 17:19:51 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1465 ms
+2021-07-21 17:19:52 INFO  main org.elasticsearch.plugins.PluginsService no modules loaded
+2021-07-21 17:19:52 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-07-21 17:19:52 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-07-21 17:19:52 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-07-21 17:19:52 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-07-21 17:19:52 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-07-21 17:19:57 INFO  main org.springframework.data.elasticsearch.client.TransportClientFactoryBean Adding transport node : 192.168.2.11:9300
+2021-07-21 17:20:04 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-21 17:20:04 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-21 17:20:05 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-07-21 17:20:05 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-07-21 17:20:05 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 17:20:05 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 17:20:05 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-21 17:20:05 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 36.376 seconds (JVM running for 42.044)
+2021-07-21 17:20:54 INFO  http-nio-5000-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-21 17:20:54 INFO  http-nio-5000-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-07-21 17:20:54 INFO  http-nio-5000-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 8 ms
+2021-07-21 17:21:03 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.EsController 【better-elk】已删除索引:poem的所有文档！
+2021-07-21 17:21:04 INFO  http-nio-5000-exec-6 com.mqz.elk.web.controller.user.EsController 【better-elk】已初始化索引:poem的所有文档！
+2021-07-21 17:25:01 INFO  http-nio-5000-exec-10 com.mqz.elk.web.controller.user.EsController 【better-elk】查询索引:poem的所有文档！
+2021-07-21 17:25:06 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.EsController 【better-elk】查询索引:poem的所有文档！
+2021-07-21 17:25:06 INFO  http-nio-5000-exec-3 com.mqz.elk.web.controller.user.EsController 【better-elk】查询索引:poem的所有文档！
+2021-07-21 17:25:07 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.EsController 【better-elk】查询索引:poem的所有文档！
+2021-07-21 17:25:07 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.EsController 【better-elk】查询索引:poem的所有文档！
+2021-07-21 17:25:07 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.EsController 【better-elk】查询索引:poem的所有文档！
+2021-07-21 17:27:29 INFO  Thread-76 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-21 17:28:08 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 11036 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 17:28:08 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 17:28:09 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 17:28:09 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 119ms. Found 1 repository interfaces.
+2021-07-21 17:28:10 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 17:28:10 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 17:28:10 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 17:28:10 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 17:28:10 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 2231 ms
+2021-07-21 17:28:11 INFO  main org.elasticsearch.plugins.PluginsService no modules loaded
+2021-07-21 17:28:11 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-07-21 17:28:11 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-07-21 17:28:11 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-07-21 17:28:11 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-07-21 17:28:11 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-07-21 17:28:16 INFO  main org.springframework.data.elasticsearch.client.TransportClientFactoryBean Adding transport node : 192.168.2.11:9300
+2021-07-21 17:28:22 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-21 17:28:22 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-21 17:28:23 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-07-21 17:28:23 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-07-21 17:28:23 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 17:28:23 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 17:28:23 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-21 17:28:23 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 36.724 seconds (JVM running for 42.968)
+2021-07-21 17:34:09 INFO  http-nio-5000-exec-1 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-21 17:34:09 INFO  http-nio-5000-exec-1 org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2021-07-21 17:34:09 INFO  http-nio-5000-exec-1 org.springframework.web.servlet.DispatcherServlet Completed initialization in 21 ms
+2021-07-21 17:34:10 INFO  http-nio-5000-exec-1 com.mqz.elk.web.controller.user.EsController 【better-elk】查询索引:poem的所有文档！
+2021-07-21 17:34:35 INFO  http-nio-5000-exec-2 com.mqz.elk.web.controller.user.EsController 【better-elk】关键字查找索引:poem的文档！
+2021-07-21 17:57:10 INFO  http-nio-5000-exec-4 com.mqz.elk.web.controller.user.EsController 【better-elk】关键字查找索引:poem的文档！
+2021-07-21 17:57:22 INFO  http-nio-5000-exec-5 com.mqz.elk.web.controller.user.EsController 【better-elk】关键字查找索引:poem的文档！
+2021-07-21 17:59:34 INFO  Thread-76 org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-21 18:00:10 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 11256 (/Applications/mqz/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/better-elk)
+2021-07-21 18:00:10 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-07-21 18:00:10 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-07-21 18:00:10 INFO  main org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 87ms. Found 1 repository interfaces.
+2021-07-21 18:00:11 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 5000 (http)
+2021-07-21 18:00:11 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-07-21 18:00:11 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-07-21 18:00:11 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-07-21 18:00:11 INFO  main org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1652 ms
+2021-07-21 18:00:12 INFO  main org.elasticsearch.plugins.PluginsService no modules loaded
+2021-07-21 18:00:12 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-07-21 18:00:12 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-07-21 18:00:12 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-07-21 18:00:12 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-07-21 18:00:12 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-07-21 18:00:18 INFO  main org.springframework.data.elasticsearch.client.TransportClientFactoryBean Adding transport node : 192.168.2.11:9300
+2021-07-21 18:00:24 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-07-21 18:00:24 INFO  main org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-21 18:00:25 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-07-21 18:00:25 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-07-21 18:00:25 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 18:00:25 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-07-21 18:00:25 INFO  main org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 5000 (http) with context path ''
+2021-07-21 18:00:25 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 36.28 seconds (JVM running for 42.112)

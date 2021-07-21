@@ -1,0 +1,21 @@
+version: "3.3"
+services:
+  kibana:
+    image: kibana:7.13.2
+    container_name: kibana
+    environment:
+      - I18N_LOCALE=zh-CN
+      - XPACK_GRAPH_ENABLED=true
+      - TIMELION_ENABLED=true
+      - XPACK_MONITORING_COLLECTION_ENABLED="true"
+      - ELASTICSEARCH_HOSTS=http://192.168.2.11:9200
+    ports:
+      - "5601:5601"
+    volumes:
+      - /root/es:/usr/share/
+    networks:
+      - kibana
+    privileged: true
+networks:
+  kibana:
+    driver: bridge
