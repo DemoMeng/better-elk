@@ -8,7 +8,9 @@ services:
       # 必须设置虚拟机参数，否则无法运行
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     volumes:
-      - /root/es:/usr/share/
+      # elasticsearch.yml需要配置，参考 ./es/elasticsearch.yml
+      - /logs/es/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - /logs/es/data:/usr/share/elasticsearch/data/nodes/0
     ports:
       # 9200是web管理端口，9300 是transport端口，也是springboot连接es操作的端口
       - "9200:9200"

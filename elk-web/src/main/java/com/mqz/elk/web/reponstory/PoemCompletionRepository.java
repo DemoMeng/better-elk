@@ -1,6 +1,6 @@
 package com.mqz.elk.web.reponstory;
 
-import com.mqz.elk.common.model.index.Poem;
+import com.mqz.elk.common.model.index.PoemCompletion;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 /**
@@ -11,6 +11,5 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
  * @Description
  * @About： https://github.com/DemoMeng
  */
-public interface PoemRepository extends ElasticsearchRepository<Poem,String> {
-
+public interface PoemCompletionRepository extends ElasticsearchRepository<PoemCompletion,String> {
 }

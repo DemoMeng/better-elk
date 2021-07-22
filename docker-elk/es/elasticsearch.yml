@@ -1,0 +1,3 @@
+#挂在目录的时候需要把这个文件挂在进去，下面内容可以修改，下面内容是默认配置
+cluster.name: "docker-cluster"
+network.host: 0.0.0.0

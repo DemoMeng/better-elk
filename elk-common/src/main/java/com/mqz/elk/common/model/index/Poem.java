@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 青网科技集团 版权所有 © Copyright 2012<br>
+ *  版权所有 © Copyright 2012<br>
  *
  * @Author： 蒙大拿
  * @Date：
@@ -25,6 +25,7 @@ import java.util.List;
 @Accessors(chain = true)
 @AllArgsConstructor()
 @NoArgsConstructor()
+// SpringBoot启动时会自动创建映射，但要注意如果已经存在相同的index，必须先删除
 @Document(indexName = "poem",type = "poem_doc")
 public class Poem implements Serializable {
 

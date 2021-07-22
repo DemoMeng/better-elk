@@ -235,6 +235,107 @@ POST d_l_location/mydoc/d6
 }
 
 
+GET info-2021.07.20/_doc/_search
+{
+"query": {
+"match": {
+"message": "【信息】"
+}
+}
+
+}
+
+
+
+PUT d_l_location2
+DELETE d_l_location2
+
+POST d_l_location2/mydoc/1
+{
+
+        "geo" : {
+          "properties" : {
+            "coordinates" : {
+              "type" : "geo_point"
+            },
+            "dest" : {
+              "type" : "keyword"
+            },
+            "src" : {
+              "type" : "keyword"
+            },
+            "srcdest" : {
+              "type" : "keyword"
+            }
+          }
+        }
+
+
+
+}
+
+DELETE %%{appname}-2021.07.21
+
+put poem
+
+GET poem/_mapping
+
+
+# 设置mapper 和
+# 定义成completion的字段无法应用highlight返回，这里和原来索引一样
+PUT /poem_completion
+{
+"mappings" : {
+"properties" : {
+"userRemark" : {
+"type" :    "completion"
+},
+"id" : {
+"type" :   "text"
+}      
+}
+}
+}
+
+DELETE poem_completion
+
+#查看索引的映射情况
+GET poem_completion/_mapping
+
+GET poem_completion/_search
+{
+
+}
+
+
+
+
+DELETE poem_completion
+# 需要配置es的ik分词器插件
+PUT /poem_completion
+{
+"mappings" : {
+"properties" : {
+"userRemark" : {
+"type" :    "text"
+},
+"id" : {
+"type" :   "text"
+},
+"content" : {
+"type" :   "text"
+},
+"completionKey" : {
+"type" :   "completion"
+}
+}
+}
+}
+
+
+
+
+
 
 
 
