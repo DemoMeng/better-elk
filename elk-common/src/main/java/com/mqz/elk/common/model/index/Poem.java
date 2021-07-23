@@ -23,8 +23,6 @@ import java.util.List;
 
 @Data
 @Accessors(chain = true)
-@AllArgsConstructor()
-@NoArgsConstructor()
 // SpringBoot启动时会自动创建映射，但要注意如果已经存在相同的index，必须先删除
 @Document(indexName = "poem",type = "poem_doc")
 public class Poem implements Serializable {
@@ -64,5 +62,12 @@ public class Poem implements Serializable {
         poemList.add(new Poem("1jjjj","《秣陵》 清·屈大均","牛首开天阙，龙岗抱帝宫。六朝春草里，万井落花中。访旧乌衣少，听歌玉树空。如何亡国恨，尽在大江东。"));
     }
 
+    public Poem(String id, String userRemark, String content) {
+        this.id = id;
+        this.userRemark = userRemark;
+        this.content = content;
+    }
 
+    public Poem() {
+    }
 }

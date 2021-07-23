@@ -56,7 +56,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <scope>compile</scope>
+            <version>1.18.6</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- es启动依赖=====start===== -->

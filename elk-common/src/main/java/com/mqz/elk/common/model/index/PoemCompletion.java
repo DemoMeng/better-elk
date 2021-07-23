@@ -24,8 +24,6 @@ import java.util.List;
  */
 @Data
 @Accessors(chain = true)
-@AllArgsConstructor()
-@NoArgsConstructor()
 // SpringBoot启动时会自动创建映射，但要注意如果已经存在相同的index，必须先删除
 @Document(indexName = "poem_completion",type = "poem_completion_doc")
 public class PoemCompletion implements Serializable {
@@ -71,5 +69,13 @@ public class PoemCompletion implements Serializable {
         poemList.add(new PoemCompletion(new Completion(new String[]{"爱国"}),"1jjjj","《秣陵》 清·屈大均","牛首开天阙，龙岗抱帝宫。六朝春草里，万井落花中。访旧乌衣少，听歌玉树空。如何亡国恨，尽在大江东。"));
     }
 
+    public PoemCompletion(Completion completionKey, String id, String userRemark, String content) {
+        this.completionKey = completionKey;
+        this.id = id;
+        this.userRemark = userRemark;
+        this.content = content;
+    }
 
+    public PoemCompletion() {
+    }
 }

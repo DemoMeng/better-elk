@@ -28,7 +28,12 @@
         "task_max_waiting_in_queue_millis": 0,
         "active_shards_percent_as_number": 73.33333333333333
       }     
-        
-        
 
 
+
+- 安装IK分词器：
+
+  1. docker exec -it 容器id /bin/bash
+  2. ./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.13.2/elasticsearch-analysis-ik-7.13.2.z
+  3. docker restart 容器id
+  
