@@ -7,6 +7,8 @@ services:
       - discovery.type=single-node
       # 必须设置虚拟机参数，否则无法运行
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      # 宿主机没有容器文件权限的配置
+      - "TAKE_FILE_OWNERSHIP=true"
     volumes:
       # elasticsearch.yml需要配置，参考 ./es/elasticsearch.yml
       - /logs/es/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml

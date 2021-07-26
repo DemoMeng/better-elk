@@ -1,0 +1,27 @@
+filebeat.config:
+  modules:
+    path: ${path.config}/modules.d/*.yml
+    reload.enabled: true
+
+processors:
+  - add_cloud_metadata: ~
+  - add_docker_metadata: ~
+
+
+#日志文件作为数据涞源，注意如果是通过容器启动filebeat的话，这个日志路径是容器内的
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths: /var/share/filebeat/logs/info_2021-07-04.log
+
+output.logstash:
+  hosts: ["8.130.165.67:5044"]
+
+#输出到es
+#output.elasticsearch:
+#  hosts: ["106.12.187.16:9200"]
+#  index: "filebeat-%{+yyyy.MM.dd}"
+
+# 鉴权可以暂时不用
+## username: '${ELASTICSEARCH_USERNAME:}'
+## password: '${ELASTICSEARCH_PASSWORD:}'

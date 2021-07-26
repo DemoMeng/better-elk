@@ -11,4 +11,6 @@ services:
     volumes:
       - ./conf/logstash.yml:/usr/share/logstash/config/logstash.yml
       - ./pipeline:/usr/share/logstash/pipeline
+      # nginx日志挂在到docker容器内
+      - /var/log/nginx/access.log:/usr/share/nginx/access.log
     privileged: true

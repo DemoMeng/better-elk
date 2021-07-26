@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  filebeat:
+    image: elastic/filebeat:7.13.4
+    container_name: filebeat_by_mqz
+    ports:
+      - "4044:4044"
+    privileged: true
+    volumes:
+      - ./conf/filebeat.yml:/usr/share/filebeat/filebeat.yml
+      #把宿主机的目录日志挂载到容器中，并且在配置中指向这个容器的目录日志，上次一直传送给logstash没收到，就是目录搞错了！
+      - /root/logs/qingbang-service/info_2021-07-04.0.log:/var/share/filebeat/logs/info_2021-07-04.log

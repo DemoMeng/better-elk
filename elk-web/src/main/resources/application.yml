@@ -12,10 +12,12 @@ spring:
   data:
     elasticsearch:
       cluster-name: docker-cluster
-      cluster-nodes: 192.168.2.11:9300
-      #cluster-nodes: 106.12.187.16:9300
+      #cluster-nodes: 8.130.165.67:9300
+      #cluster-nodes: 192.168.2.11:9300
+      cluster-nodes: 106.12.187.16:9300
       repositories:
         enabled: true
+
 
 
 knife4j:
@@ -26,16 +28,15 @@ knife4j:
     enable: true
     username: mqz
     password: mengqizhang
-
-  setting:
-    #自定义主页
-    enableHomeCustom: true
-    homeCustomLocation: classpath:resources/home/welcome.md
-
-    #自定义footer
-    enableFooter: true
-    enableFooterCustom: true
-    footerCustomContent: SuperNiuBI License 2.0 | Copyright  2019-[浙江大拿有限公司](https://gitee.com/DemoMeng)
+#  setting:
+#    #自定义主页
+#    enableHomeCustom: true
+#    homeCustomLocation: classpath:resources/home/welcome.md
+#
+#    #自定义footer
+#    enableFooter: true
+#    enableFooterCustom: true
+#    footerCustomContent: SuperNiuBI License 2.0 | Copyright  2019-[浙江大拿有限公司](https://gitee.com/DemoMeng)
 
 swagger:
   enable: true
