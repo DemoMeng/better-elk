@@ -1,6 +1,6 @@
 # Nginx 日志输出到Logstash 
 
- - 1. nginx.conf配置：
+ - 1. nginx.conf相关配置：
         ````   
            
            log_format json '{"@timestamp":"$time_iso8601",'

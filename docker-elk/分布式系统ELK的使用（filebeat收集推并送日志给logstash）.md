@@ -8,8 +8,8 @@
       filebeat将应用日志收集给logstash解析，解析完由logstash再传给elasticsearch。   
    
     
-- 流程： 
-![img.png](images/分布式系统ELK流程.png)
+- 流程：
+  ![img.png](images/分布式系统中ELK流程4.png)
   
 
 
