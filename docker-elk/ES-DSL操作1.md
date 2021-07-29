@@ -8,20 +8,20 @@ DELETE simple_system_user
 #创建tpye=user,文档=mengqizhang
 POST simple_system_user/user/mengqizhang
 {
-"id": 1,
-"loginName": "mengqizhang",
-"password": "123123",
-"salt": "撒打算2撒打算的",
-"name": "蒙奇长",
-"userType": 1,
-"area": "12",
-"loginIp": "192.168.33.23",
-"enable": 1,
-"loginFlag": 1,
-"createBy": 1,
-"updateBy": 1,
-"remarks": "测试es",
-"delFlag": 1
+    "id": 1,
+    "loginName": "mengqizhang",
+    "password": "123123",
+    "salt": "撒打算2撒打算的",
+    "name": "蒙奇长",
+    "userType": 1,
+    "area": "12",
+    "loginIp": "192.168.33.23",
+    "enable": 1,
+    "loginFlag": 1,
+    "createBy": 1,
+    "updateBy": 1,
+    "remarks": "测试es",
+    "delFlag": 1
 }
 
 #获取文档=mengqizhang
@@ -31,20 +31,20 @@ GET simple_system_user/user/mengqizhang
 #创建tpye=user,文档=lixinghua
 POST simple_system_user/user/lixinghua
 {
-"id": 1,
-"loginName": "lixinghua",
-"password": "111啊啊啊啊啊啊啊",
-"salt": "水电费水电费的身份重新出现",
-"name": "理性化",
-"userType": 2,
-"area": "12",
-"loginIp": "99.168.33.23",
-"enable": 1,
-"loginFlag": 1,
-"createBy": 1,
-"updateBy": 1,
-"remarks": "撒打算的都是对的",
-"delFlag": 1
+    "id": 1,
+    "loginName": "lixinghua",
+    "password": "111啊啊啊啊啊啊啊",
+    "salt": "水电费水电费的身份重新出现",
+    "name": "理性化",
+    "userType": 2,
+    "area": "12",
+    "loginIp": "99.168.33.23",
+    "enable": 1,
+    "loginFlag": 1,
+    "createBy": 1,
+    "updateBy": 1,
+    "remarks": "撒打算的都是对的",
+    "delFlag": 1
 }
 
 #获取文档=lixinghua
@@ -54,20 +54,20 @@ GET simple_system_user/user/lixinghua
 #创建tpye=user,文档=zhangsan
 POST simple_system_user/user/zhangsan
 {
-"id": 1,
-"loginName": "zhangsan",
-"password": "123123啊啊啊啊啊",
-"salt": "123123啊啊啊啊滴滴答答滴滴答答滴滴答答滴滴答答的",
-"name": "张三",
-"userType": 1,
-"area": "12",
-"loginIp": "172.168.33.23",
-"enable": 1,
-"loginFlag": 1,
-"createBy": 1,
-"updateBy": 1,
-"remarks": "水电费水电费桑多瓦尔为",
-"delFlag": 1
+    "id": 1,
+    "loginName": "zhangsan",
+    "password": "123123啊啊啊啊啊",
+    "salt": "123123啊啊啊啊滴滴答答滴滴答答滴滴答答滴滴答答的",
+    "name": "张三",
+    "userType": 1,
+    "area": "12",
+    "loginIp": "172.168.33.23",
+    "enable": 1,
+    "loginFlag": 1,
+    "createBy": 1,
+    "updateBy": 1,
+    "remarks": "水电费水电费桑多瓦尔为",
+    "delFlag": 1
 }
 
 #获取文档=zhangsan
@@ -78,56 +78,45 @@ GET simple_system_user/user/zhangsan
 #带JSON条件搜索， query ，sort：排序
 GET simple_system_user/user/_search
 {
-"query": {
-"match": {
-"name": "蒙"
-}
-},
-"sort": [
-{
-"delFlag": "desc"
-}
-]
+    "query": {
+        "match": {
+            "name": "蒙"
+        }
+    },
+    "sort": [
+        {
+        "delFlag": "desc"
+        }
+    ]
 }
 #搜索索引 simple_system_user 所有的数据
 GET simple_system_user/_search
 {
-"from":0,
-"size":200
+    "from":0,
+    "size":200
 }
 
 
 GET simple_system_user/_search
 {
-"query": {
-
-    "bool": {
-      
-      
-      "must":[
-        {
-          "match": {
-            "name":"蒙"
-          }
-          
+    "query": {
+        "bool": {
+          "must":[
+            {
+              "match": {
+                "name":"蒙"
+              }
+            } 
+          ],
+          "should": [
+            {
+              "match": {
+                "name": "理"
+              }
+            }
+          ]
         } 
-      ],
-      
-      "should": [
-        {
-          "match": {
-            "name": "理"
-          }
-          
-          
-        }
-      ]
-      
-         
-    } 
-}
-
-
+    }
 }
 
 # must：　　表示一定要满足；
@@ -140,8 +129,8 @@ GET simple_system_user/_search
 #搜索索引 simple_system_user 所有的数据
 GET simple_system_user/_search
 {
-"from":0,
-"size":45
+    "from":0,
+    "size":45
 }
 
 
@@ -150,17 +139,16 @@ GET simple_system_user/_search
 #高亮搜索，需要加入highlight参数进行查询
 GET simple_system_user/user/_search
 {
-"query": {
-"match_phrase": {
-"remarks": "李清照"
-}
-
-},
-"highlight": {
-"fields": {
-"remarks": {}
-}
-}
+    "query": {
+        "match_phrase": {
+        "remarks": "李清照"
+        }
+    },
+    "highlight": {
+        "fields": {
+            "remarks": {}
+        }
+    }
 }
 
 #高亮搜索，需要加入highlight参数进行查询，自定义高亮显示的关键字标签
