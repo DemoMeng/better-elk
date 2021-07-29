@@ -15,11 +15,11 @@ filebeat.inputs:
     paths: /var/share/filebeat/logs/info_2021-07-04.log
 
 output.logstash:
-  hosts: ["8.130.165.67:5044"]
+  hosts: ["x.xx.xx.xx:5044"]
 
 #输出到es
 #output.elasticsearch:
-#  hosts: ["106.12.187.16:9200"]
+#  hosts: ["es的ip:9200"]
 #  index: "filebeat-%{+yyyy.MM.dd}"
 
 # 鉴权可以暂时不用
