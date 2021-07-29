@@ -12,7 +12,7 @@
 
 #### 定义：
 
-    分布式的 Restful 风格的搜索和数据分析引擎
+    · 分布式的 Restful 风格的搜索和数据分析引擎
 
 #### 特点：
     
@@ -52,6 +52,38 @@
       2. ./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.13.2/elasticsearch-analysis-ik-7.13.2.z
       3. docker restart 容器id
 
+#### 集群：
+    -集群： 
+        1. 一个运行中的 Elasticsearch 实例称为一个节点，而集群是由一个或者多个拥有相同 cluster.name 配置的节点组成，
+           它们共同承担数据和负载的压力。当有节点加入集群中或者从集群中移除节点时，集群将会重新平均分布所有的数据。
+        2. 主节点负责管理集群范围内增加、删除索引等操作！ 任何节点都可以选举为主节点，当只有一个es实例的时候
+
+    - 集群健康： 
+        1. GET /_cluster/health
+            返回json信息： 
+
+            {
+                "cluster_name": "docker-cluster",
+                "status": "yellow",
+                "timed_out": false,
+                "number_of_nodes": 1,
+                "number_of_data_nodes": 1,
+                "active_primary_shards": 25,
+                "active_shards": 25,
+                "relocating_shards": 0,
+                "initializing_shards": 0,
+                "unassigned_shards": 18,
+                "delayed_unassigned_shards": 0,
+                "number_of_pending_tasks": 0,
+                "number_of_in_flight_fetch": 0,
+                "task_max_waiting_in_queue_millis": 0,
+                "active_shards_percent_as_number": 58.139534883720934
+            }
+            
+            其中状态值status：
+                green 所有的主分片和副本分片都正常运行。
+                yellow 所有的主分片都正常运行，但不是所有的副本分片都正常运行。
+                red 有主分片没能正常运行。
 
 
 
