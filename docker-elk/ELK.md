@@ -92,7 +92,121 @@
     2 类型： = mysql表
     3 文档： = mysql中的记录
     4 分片： 把数据分成多个在不同节点上
+            a 一个分片是一个Lucene实例
+            b Elasticsearch 是利用分片将数据分发到集群内各处的，分片是数据的容器，文档保存在分片内，分片又被分配到集群内的各个节点里。
+            c 主分片 和 副分片，通过接口查询es的健康状态，其中的 "unassigned_shards"代表副分片未分配的数量（在同一个节点上既保存原始数据又保存副本是没有意义的）
     5 副本： 索引的备份机制
+
+
+
+    倒排索引：
+        例如，假设我们有两个文档，每个文档的 content 域包含如下内容：
+            The quick brown fox jumped over the lazy dog
+            Quick brown foxes leap over lazy dogs in summer
+        为了创建倒排索引，我们首先将每个文档的 content 域拆分成单独的 词（我们称它为 词条 或 tokens ），
+        创建一个包含所有不重复词条的排序列表，然后列出每个词条出现在哪个文档。结果如下所示：
+            Term      Doc_1  Doc_2
+            -------------------------
+            Quick   |       |  X
+            The     |   X   |
+            brown   |   X   |  X
+            dog     |   X   |
+            dogs    |       |  X
+            fox     |   X   |
+            foxes   |       |  X
+            in      |       |  X
+            jumped  |   X   |
+            lazy    |   X   |  X
+            leap    |       |  X
+            over    |   X   |  X
+            quick   |   X   |
+            summer  |       |  X
+            the     |   X   |
+            ------------------------
+
+        现在，如果我们想搜索 quick brown ，我们只需要查找包含每个词条的文档：
+            
+            Term      Doc_1  Doc_2
+            -------------------------
+            brown   |   X   |  X
+            quick   |   X   |
+            ------------------------
+            Total   |   2   |  1
+        两个文档都匹配，但是第一个文档比第二个匹配度更高。如果我们使用仅计算匹配词条数量的简单 相似性算法 ，那么，我们可以说，对于我们查询的相关性来讲，第一个文档比第二个文档更佳。
+
+    
+
+
+
+    文档的如何存储的：
+        
+        1. 当索引一个文档的时候，文档会存到主分片中。ES如何知道这个文档是在哪个分片里，依据的公式：
+            分片  = hash(默认文档的id) % 主分片的数量
+            shard = hash(routing) % number_of_primary_shards
+                
+                - routing 是一个可变值，默认是文档的 _id ，也可以设置成一个自定义的值。
+                - routing 通过 hash 函数生成一个数字，然后这个数字再除以 number_of_primary_shards （主分片的数量）后得到 余数 。
+                - 这个分布在 0到 number_of_primary_shards-1 之间的余数，就是我们所寻求的文档所在分片的位置。
+                这就解释了为什么我们要在创建索引的时候就确定好主分片的数量 并且永远不会改变这个数量：因为如果数量变化了，那么所有之前路由的值都会无效，文档也再也找不到了。
+            
+
+    
+    文档的操作：
+
+        1.新增一个文档
+            PUT poem/test/1
+            {
+                "id": "1",
+                "userRemark": "索引中的version字段-相同的id就是update文档",
+                "content": "是乐观锁，保证数据并发情况下的准确性-相同的id就是update文档"
+            }
+            解析： 1是文档的id，若id=1该文档不在索引内，则是新建，返回如下result=created，并且有个一version字段，
+                  在Elasticsearch中每个文档都有一个版本号。当每次对文档进行修改时（包括删除），_version 的值会递增。在处理冲突中，
+                  我们讨论了怎样使用 _version号码确保你的应用程序中的一部分修改不会覆盖另一部分所做的修改。
+    
+            {
+                "_index" : "poem",
+                "_type" : "test",
+                "_id" : "6",
+                "_version" : 1,
+                "result" : "created",
+                "_shards" : {
+                "total" : 2,
+                "successful" : 1,
+                "failed" : 0
+                },
+                "_seq_no" : 1,
+                "_primary_term" : 1
+            }
+
+        2.查询指定id的文档
+          GET poem/test/1?pretty
+          返回：
+                {
+                    "_index" : "poem",
+                    "_type" : "test",
+                    "_id" : "1",
+                    "_version" : 1,
+                    "_seq_no" : 0,
+                    "_primary_term" : 1,
+                    "found" : true,
+                    "_source" : {
+                    "id" : "demoData",
+                    "userRemark" : "demoData",
+                    "content" : "demoData"
+                    }
+                }
+            
+          #查询指定id的文档并且返回指定部分
+          GET poem/test/1/_source
+          返回：
+                {
+                    "id" : "demoData",
+                    "userRemark" : "demoData",
+                    "content" : "demoData"
+                }
+
+
 
     
 
