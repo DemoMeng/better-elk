@@ -13,10 +13,44 @@ spring:
     elasticsearch:
       cluster-name: docker-cluster
       #cluster-nodes: x.xxx.xxx.xx:9300
-      #cluster-nodes: 192.168.2.11:9300
-      cluster-nodes: xx.xx.xx.xx:9300
+      cluster-nodes: 192.168.2.11:9300
       repositories:
         enabled: true
+
+
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:20000
+        username: mqz
+        password: mqz
+        instance:
+          prefer-ip: true
+          #service-url: http://localhost:9999
+    #  security:
+    #    user:
+    #      name: "mqz"
+    #      password: "mqz"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /mqz
+  endpoint:
+    health:
+      show-details: always
+    logfile:
+      external-file: logs/service/info/info-better-elk.log
+  health:
+    # springboot-admin 针对es的健康检查
+    elasticsearch:
+      enabled: false
+
+
+
+
 
 
 
@@ -43,6 +77,10 @@ swagger:
 
 logging:
   config: classpath:logback/logback-@projectActive@.xml
+
+
+
+
 
 
 

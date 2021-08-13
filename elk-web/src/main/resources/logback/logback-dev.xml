@@ -69,8 +69,8 @@
 
     <!-- logback日志配置 -->
     <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <!--<destination>192.168.2.11:5000</destination>-->
-        <destination>x.xx.xxx.xxx:5000</destination>
+        <destination>192.168.2.11:5000</destination>
+        <!--<destination>x.xx.xxx.xxx:5000</destination>-->
         <queueSize>1048576</queueSize>
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder">
             <providers>
