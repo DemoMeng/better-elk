@@ -1,0 +1,65 @@
+server:
+  port: 5000
+
+spring:
+  application:
+    name: better-elk
+  profiles:
+    active: dev
+  #ES 配置
+  data:
+    elasticsearch:
+      cluster-name: docker-cluster
+      #cluster-nodes: x.xxx.xxx.xx:9300
+      cluster-nodes: 192.168.2.11:9300
+      repositories:
+        enabled: true
+  boot:
+    admin:
+      client:
+        url: http://localhost:20000 #监控项目地址： https://github.com/DemoMeng/simple-fxq-sba
+        username: mqz
+        password: mqz
+        instance:
+          prefer-ip: true
+          #service-url: http://localhost:9999
+    #  security:
+    #    user:
+    #      name: "mqz"
+    #      password: "mqz"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /mqz
+  endpoint:
+    health:
+      show-details: always
+    logfile:
+      external-file: logs/service/info/info-better-elk.log
+  health:
+    # springboot-admin 针对es的健康检查
+    elasticsearch:
+      enabled: false
+knife4j:
+  # 开启增强配置
+  enable: true
+  #开启Swagger的Basic认证功能,默认是false
+  basic:
+    enable: true
+    username: mqz
+    password: mengqizhang
+#  setting:
+#    #自定义主页
+#    enableHomeCustom: true
+#    homeCustomLocation: classpath:resources/home/welcome.md
+#
+#    #自定义footer
+#    enableFooter: true
+#    enableFooterCustom: true
+#    footerCustomContent: SuperNiuBI License 2.0 | Copyright  2019-[浙江大拿有限公司](https://gitee.com/DemoMeng)
+swagger:
+  enable: true
+logging:
+  config: classpath:logback/logback-@projectActive@.xml

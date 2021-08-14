@@ -1,0 +1,22 @@
+2021-08-14 11:39:56 INFO  main com.mqz.elk.web.ElkWebApplication Starting ElkWebApplication on xiaoguotudoudeiMac.local with PID 2134 (/Applications/mqz/project-head/better-elk/elk-web/target/classes started by xiaoguotudou in /Applications/mqz/project-head/better-elk)
+2021-08-14 11:39:56 INFO  main com.mqz.elk.web.ElkWebApplication The following profiles are active: dev
+2021-08-14 11:39:57 INFO  main org.apache.catalina.core.StandardService Starting service [Tomcat]
+2021-08-14 11:39:57 INFO  main org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-08-14 11:39:57 INFO  main org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2021-08-14 11:39:58 INFO  main org.elasticsearch.plugins.PluginsService no modules loaded
+2021-08-14 11:39:58 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-08-14 11:39:58 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-08-14 11:39:58 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-08-14 11:39:58 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-08-14 11:39:58 INFO  main org.elasticsearch.plugins.PluginsService loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-08-14 11:40:10 ERROR main org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository failed to load elasticsearch nodes : MapperParsingException[Failed to parse mapping [poem_doc]: analyzer [ik_max_word] has not been configured in mappings]; nested: IllegalArgumentException[analyzer [ik_max_word] has not been configured in mappings];; java.lang.IllegalArgumentException: analyzer [ik_max_word] has not been configured in mappings
+2021-08-14 11:40:10 ERROR main org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository failed to load elasticsearch nodes : MapperParsingException[Failed to parse mapping [poem_completion_doc]: analyzer [ik_max_word] has not been configured in mappings]; nested: IllegalArgumentException[analyzer [ik_max_word] has not been configured in mappings];; java.lang.IllegalArgumentException: analyzer [ik_max_word] has not been configured in mappings
+2021-08-14 11:40:11 INFO  main springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-08-14 11:40:12 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2021-08-14 11:40:12 INFO  main springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 2 custom documentation plugin(s)
+2021-08-14 11:40:12 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-08-14 11:40:13 INFO  main springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: countUsingGET_1
+2021-08-14 11:40:13 INFO  main springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2021-08-14 11:40:13 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 38.156 seconds (JVM running for 43.932)
+2021-08-14 11:40:14 INFO  RMI TCP Connection(5)-192.168.1.104 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-14 11:40:28 WARN  registrationTask1 de.codecentric.boot.admin.client.registration.ApplicationRegistrator Failed to register application as Application(name=better-elk, managementUrl=http://192.168.1.104:5000/mqz, healthUrl=http://192.168.1.104:5000/mqz/health, serviceUrl=http://192.168.1.104:5000/) at spring-boot-admin ([http://localhost:20000/instances]): I/O error on POST request for "http://localhost:20000/instances": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused). Further attempts are logged on DEBUG level

@@ -5,6 +5,18 @@
 
 
 
+# docker挂载文件的更新问题
+
+    问题： 1. 更新了宿主机的文件内容，挂载到docker容器内的文件没有同步更新
+    
+    原因： docker挂载文件基于inode。vim等编辑工具保存文件时，并非直接保存，而是将一份新的临时文件覆盖了旧文件。对于inode而言，原文件并未被修改。
+   
+    解决方案：
+            1. 换用nano等直接更新文件的编辑工具
+            2. 改为挂载目录。
+            3. 修改vim配置，添加：set backupcopy=yes
+
+    参考： https://github.com/moby/moby/issues/15793
 
 
 # Lombok问题： 本地debug（编译）提示不通过，指的是找到lombok依赖包：
