@@ -20,3 +20,20 @@
 2021-08-14 11:40:13 INFO  main com.mqz.elk.web.ElkWebApplication Started ElkWebApplication in 38.156 seconds (JVM running for 43.932)
 2021-08-14 11:40:14 INFO  RMI TCP Connection(5)-192.168.1.104 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-08-14 11:40:28 WARN  registrationTask1 de.codecentric.boot.admin.client.registration.ApplicationRegistrator Failed to register application as Application(name=better-elk, managementUrl=http://192.168.1.104:5000/mqz, healthUrl=http://192.168.1.104:5000/mqz/health, serviceUrl=http://192.168.1.104:5000/) at spring-boot-admin ([http://localhost:20000/instances]): I/O error on POST request for "http://localhost:20000/instances": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused). Further attempts are logged on DEBUG level
+2021-08-14 16:16:43 WARN  elasticsearch[_client_][transport_worker][T#8] org.elasticsearch.transport.TcpTransport exception caught on transport layer [Netty4TcpChannel{localAddress=/192.168.1.104:63061, remoteAddress=/192.168.2.11:9300}], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1125)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:577)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:531)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905)
+	at java.lang.Thread.run(Thread.java:748)
