@@ -9,4 +9,5 @@ services:
     volumes:
       - ./conf/filebeat.yml:/usr/share/filebeat/filebeat.yml
       #把宿主机的目录日志挂载到容器中，并且在配置中指向这个容器的目录日志，上次一直传送给logstash没收到，就是目录搞错了！
+      # 这里建议把日志目录挂载，因为挂载日志文件的话无法实时的共享到容易内，具体可了解文件inode机制
       - /root/logs/qingbang-service/info_2021-07-04.0.log:/var/share/filebeat/logs/info_2021-07-04.log
