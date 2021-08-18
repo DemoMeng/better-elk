@@ -55,6 +55,19 @@ public class SwaggerConfig {
                 .build();
     }
 
+    @Bean(name = "swagger-bootstrap-ui")
+    public Docket createRestApi2() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .enable(enable)
+                .apiInfo(apiInfo())
+                .groupName("swagger-bootstrap-ui")
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.mqz.elk.web.controller.swagger"))
+                .paths(PathSelectors.any())
+                //.paths(PathSelectors.ant("/api/**"))
+                .build();
+    }
+
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("better-elk在线接口文档")

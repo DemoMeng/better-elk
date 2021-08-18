@@ -28,6 +28,14 @@
             Preferences -> Complier -> 加入参数：-Djps.track.ap.dependencies=false
 
 
+# swagger文档报错问题
+    
+    问题： @ApiModelProperty() 中的example 属性使用不规范导致接口文档报错的问题： 
+    解决及相关： 
+        https://xiaoym.gitee.io/knife4j/faq/swaggerResourceInvalid.html#json%E6%A0%BC%E5%BC%8F%E9%9D%9E%E6%B3%95
+        https://github.com/xiaoymin/swagger-bootstrap-ui/issues/377
+
+
 # idea 设置VM虚拟机参数：
     
     -Xms512m -Xmx512m -Xmn200m
