@@ -50,6 +50,8 @@ knife4j:
     enable: true
     username: mqz
     password: mengqizhang
+#  自定义主页和自定义footer需要knife4j-spring-boot-starter版本大于等于2.0.8，
+#  并且2.0.6需要springboot为2.2.x
 #  setting:
 #    #自定义主页
 #    enableHomeCustom: true

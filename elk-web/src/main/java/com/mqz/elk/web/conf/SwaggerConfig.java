@@ -11,7 +11,6 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
-//import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * 版权所有  copyright© 蒙大拿
@@ -20,9 +19,17 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @date
  * @about https://www.github.com/DemoMeng
  * @description
+ *
+ *  knife4j-spring-boot-starter 2.0.6 SpringBoot的版本需要大于2.2.x
+ *
+ *
+ * swagger配置注解和版本关系：
+ *
+ *  2.2.0 ～ 2.0.5 : @EnableSwagger2 @EnableKnife4j
+ *  2.0.6 ~ 2.0.8 : @EnableSwagger2WebMvc
  */
 @Configuration
-@EnableSwagger2
+@EnableSwagger2 // knife4j-spring-boot-starter 2.0.4需要该注解
 @EnableKnife4j
 public class SwaggerConfig {
 

@@ -1,5 +1,7 @@
 package com.mqz.elk.web.controller.swagger;
 
+import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
+import com.github.xiaoymin.knife4j.annotations.ApiSupport;
 import com.mqz.elk.common.model.dto.swagger.OffHireSaveDTO;
 import com.mqz.elk.common.model.vo.OffHireDetailVO;
 import io.swagger.annotations.Api;
@@ -20,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping(value = "/swagger/boostrap-ui")
+@ApiSupport(author = "https://gitee.com/DemoMeng")
 @Api(tags = "swagger-bootstap-ui")
 @Slf4j
 public class SwaggerBoostrapUi {
@@ -32,6 +35,7 @@ public class SwaggerBoostrapUi {
         return null;
     }
 
+    @ApiOperationSupport(author = "https://github.com/DemoMeng")
     @PostMapping(value = "/detail")
     @ApiOperation(value = "回显",response = OffHireDetailVO.class)
     public Object detail(){

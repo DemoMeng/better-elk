@@ -1,11 +1,14 @@
 package com.mqz.elk.web.controller.system;
 
+import cn.hutool.json.JSONArray;
+import cn.hutool.json.JSONObject;
+import cn.hutool.json.JSONUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-;
+;import java.util.Optional;
 
 /**
  *  版权所有 © Copyright 2012<br>
@@ -24,6 +27,29 @@ public class MenuController {
     @ApiOperation(value = "菜单管理列表",nickname = "list",response = Object.class)
     public Object list(){
         return "OK";
+    }
+
+
+    public static void main(String[] args) throws Exception {
+
+
+        String a = "{}";
+        JSONObject jsonObject = JSONUtil.parseObj(a);
+        Optional.ofNullable(jsonObject).orElseThrow(() -> new Exception("json不得为空"));
+        JSONArray jsonArray = jsonObject.getJSONArray("parkIds");
+        Optional.ofNullable(jsonArray).orElseThrow(() -> new Exception("jsonArray不得为空"));
+        System.out.println(jsonArray);
+
+
+
+
+
+
+
+
+
+
+
     }
 
 }
