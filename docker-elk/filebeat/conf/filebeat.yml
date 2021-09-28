@@ -13,6 +13,14 @@ filebeat.inputs:
   - type: log
     enabled: true
     paths: /var/share/filebeat/logs/info_2021-07-04.log
+    tags: ["lowcode-log"]
+  - type: log
+    enabled: true
+    paths: /var/share/filebeat/logs/info_2021-07-04.log
+    tags: ["gateway-log"]
+### 新增一个tags区分不同的项目类型，然后logstash中直接根据tags判断输出成不同的索引
+
+
 
 output.logstash:
   hosts: ["x.xx.xx.xx:5044"]
