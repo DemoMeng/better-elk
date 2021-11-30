@@ -82,7 +82,7 @@ $connection              #TCP连接的序列号
 $connection_requests     #TCP连接当前的请求数量
 $content_length          #"Content-Length" 请求头字段
 $content_type            #"Content-Type" 请求头字段
-$cookie_name             #cookie名称
+$cookie_NAME             #cookie名称 NAME的值
 $limit_rate              #用于设置响应的速度限制
 $msec                    #当前的Unix时间戳
 $nginx_version           #nginx版本
