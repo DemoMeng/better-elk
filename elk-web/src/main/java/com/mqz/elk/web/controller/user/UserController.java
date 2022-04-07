@@ -1,12 +1,14 @@
 package com.mqz.elk.web.controller.user;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -68,5 +70,18 @@ public class UserController {
         }
         return result;
     }
+
+    @PostMapping(value = "/uploadStandard")
+    @ApiOperation(value = "上传标准合同模板", notes = "上传标准合同模板")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "file",value = "form表单文件,支持doc;docx;pdf格式",required = true),
+            @ApiImplicitParam(name = "contractTemplateGroupId", value = "合同模板分组编号",required = true)
+    })
+    public Object uploadStandard(HttpServletRequest request, @RequestParam MultipartFile[] files,
+                                 @RequestParam Long contractTemplateGroupId) {
+        return null;
+    }
+
+
 
 }

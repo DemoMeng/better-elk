@@ -30,26 +30,4 @@ public class MenuController {
     }
 
 
-    public static void main(String[] args) throws Exception {
-
-
-        String a = "{}";
-        JSONObject jsonObject = JSONUtil.parseObj(a);
-        Optional.ofNullable(jsonObject).orElseThrow(() -> new Exception("json不得为空"));
-        JSONArray jsonArray = jsonObject.getJSONArray("parkIds");
-        Optional.ofNullable(jsonArray).orElseThrow(() -> new Exception("jsonArray不得为空"));
-        System.out.println(jsonArray);
-
-
-
-
-
-
-
-
-
-
-
-    }
-
 }

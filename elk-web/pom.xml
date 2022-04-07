@@ -76,6 +76,10 @@
                 <includes>
                     <include>application.yml</include>
                     <include>bootstrap.yml</include>
+                    <include>application-dev.yml</include>
+                    <include>application-prod.yml</include>
+                    <include>application-test.yml</include>
+                    <include>application-default.yml</include>
                     <include>application-${projectActive}.yml</include>
                     <include>logback/logback-${projectActive}.xml</include>
                     <!-- 解析其他静态文件 Spring Boot没有解析出静态资源文件位置 .html -->

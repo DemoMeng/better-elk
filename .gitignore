@@ -40,3 +40,6 @@ logs/service/error/error-better-elk.2021-08-16.log
 logs/service/error/error-better-elk.log
 logs/service/error/error-better-elk.log
 logs/service/error/error-better-elk.log
+/logs/service/error/error.2021-08-18.log
+/logs/service/info/info.2021-08-18.log
+/logs/service/info/info.2022-03-22.log

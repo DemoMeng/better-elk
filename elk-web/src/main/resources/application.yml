@@ -4,18 +4,7 @@ server:
 spring:
   application:
     name: better-elk
+
   profiles:
-    active: dev
-
-# dev 环境
-#---
-#spring:
-#  profiles: dev
-
-
-
-# prod 环境
-#---
-#spring:
-#  profiles: prod
+    active: @projectActive@
 

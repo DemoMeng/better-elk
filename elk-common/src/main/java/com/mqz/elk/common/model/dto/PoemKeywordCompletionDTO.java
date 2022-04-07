@@ -4,6 +4,7 @@ import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
@@ -19,6 +20,7 @@ import java.io.Serializable;
 @Accessors(chain = true)
 public class PoemKeywordCompletionDTO implements Serializable {
 
+    @NotNull
     private String searchField;
     private String searchValue;
     private Integer searchMaxCount;

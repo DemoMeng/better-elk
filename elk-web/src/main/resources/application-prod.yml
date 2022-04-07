@@ -1,13 +1,4 @@
-server:
-  port: 5000
-
 spring:
-  application:
-    name: better-elk
-  profiles:
-    active: dev
-
-
   #ES 配置
   data:
     elasticsearch:
@@ -17,14 +8,14 @@ spring:
       repositories:
         enabled: true
 
-  boot:
-    admin:
-      client:
-        url: http://localhost:20000 #监控项目地址： https://github.com/DemoMeng/simple-fxq-sba
-        username: mqz
-        password: mqz
-        instance:
-          prefer-ip: true
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:20000 #监控项目地址： https://github.com/DemoMeng/simple-fxq-sba
+#        username: mqz
+#        password: mqz
+#        instance:
+#          prefer-ip: true
           #service-url: http://localhost:9999
     #  security:
     #    user:

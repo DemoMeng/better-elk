@@ -1,11 +1,4 @@
-server:
-  port: 5000
-
 spring:
-  application:
-    name: better-elk
-  profiles:
-    active: dev
   #ES 配置
   data:
     elasticsearch:
